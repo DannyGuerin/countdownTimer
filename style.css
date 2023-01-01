@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@300;600&family=Playball&family=Sedgwick+Ave+Display&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Anybody, serif;
+}
+
+.main {
+    width: 100vw;
+    height: 100%;
+}
+
+img {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    position: absolute;
+    font-family: 'Sedgwick Ave Display', cursive;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4rem;
+}
+
+.countdown {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 12px;
+    
+}
+
+.day,.hour,.minute,.second {
+    font-weight: 600;
+    font-size: 3.5rem;
+    border-radius: 12px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+.container-day,
+.container-hour,
+.container-minute,
+.container-second {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
